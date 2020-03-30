@@ -1,0 +1,85 @@
+:root {
+    --primary: #fed;
+    --accent: #012;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none
+}
+
+form, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, p {
+    list-style: none outside none
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent);
+    outline: none
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+a img {
+    border: none
+}
+
+.fr {
+    float: right
+}
+
+.fl {
+    float: left
+}
+
+body {
+    font: 12px/1.8 Verdana, Geneva, sans-serif;
+    letter-spacing: 0.1em;
+    height: 100%;
+    width: 100%;
+    background: var(--primary);
+    color: var(--accent);
+}
+
+#bible {
+	padding: 18px;
+	padding-bottom: 0;
+}
+
+#bible #GT:after, #bible #NT:after{
+	content: "";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+	padding-bottom: 20px;
+}
+
+#bible h3{
+	clear: both;
+	text-align: center;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+#bible a{
+	width: 70px;
+	float: left;
+	text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+    border-radius: 4px;
+    background: var(--primary);
+    border: 2px solid  var(--accent);
+    margin: 4px;
+    padding: 0;
+}
+
+#bible a:hover{
+    background: var(--accent);
+    color: var(--primary);
+}
