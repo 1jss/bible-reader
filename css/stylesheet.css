@@ -6,7 +6,6 @@
 * {
     margin: 0;
     padding: 0;
-    user-select: none
 }
 
 form, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, p {
@@ -46,8 +45,8 @@ body {
 }
 
 #bible {
-	padding: 18px;
-	padding-bottom: 0;
+    max-width:350px;
+    margin: 5em auto;
 }
 
 #bible #GT:after, #bible #NT:after{
@@ -82,4 +81,35 @@ body {
 #bible a:hover{
     background: var(--accent);
     color: var(--primary);
+}
+
+.book {
+    font: 16px/1.6 Georgia, serif;
+    letter-spacing: 0.03em;
+    max-width:350px;
+    margin: 5em auto;
+}
+.book h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.chapter {
+    margin-bottom: 2em;
+}
+.chapter h2 {
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 1em;
+}
+.verse {
+    text-align: justify;
+    hyphens: auto;
+    padding-bottom: 0.5em;
+}
+.verse i {
+    font-size: 10px;
+    opacity: 0.5;
+    vertical-align: top;
 }
